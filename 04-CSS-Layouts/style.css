@@ -10,11 +10,10 @@ body {
   font-family: sans-serif;
   color: #444;
   border-top: 10px solid #1098ad;
-  position: relative;
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -50,14 +49,14 @@ nav {
 
 article {
   margin-bottom: 60px;
+  position: relative;
 }
 
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 /* SMALLER ELEMENTS */
@@ -99,6 +98,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -142,6 +142,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 a:link,
@@ -183,4 +184,49 @@ button {
 h1::first-letter {
   font-style: normal;
   margin-right: 5px;
+}
+
+/* FLOATS */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+/* .clear {
+  clear: both;
+} */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
+  background-color: red;
 }

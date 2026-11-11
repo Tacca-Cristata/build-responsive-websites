@@ -132,3 +132,46 @@ body {
 .color-brown {
   background-color: #885214;
 }
+
+/* floats */
+.product-img {
+  float: left;
+}
+
+.details-title {
+  margin-top: 0;
+}
+
+.price {
+  float: left;
+}
+
+.shipping {
+  float: right;
+  margin-top: 8px;
+}
+
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  width: 243px;
+  float: left;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.product-details {
+  float: left;
+  width: 243px;
+  padding-top: 20px;
+  margin-left: 40px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
